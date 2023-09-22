@@ -1,0 +1,41 @@
+.heading{
+    color: palevioletred;
+    text-align: center;
+}
+.container{
+    width: 40%;
+    margin: 10px auto;
+}
+.slider_outer{
+    height: 400px;
+    position: relative;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.slider section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+}
+.slider section>img{
+    width: 600px;
+    height: 400px;
+}
+.bullets ul {
+    margin-left: 260px;
+    display: flex;
+    padding: 0; 
+}
+
+li {
+    font-size: 36px;
+    margin: 0 10px; 
+    padding-right: 20px;
+}
+

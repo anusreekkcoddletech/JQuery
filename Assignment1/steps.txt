@@ -1,0 +1,22 @@
+Step1 : Created a form with fields Name as textfield,Address as textarea 
+        date of birth as date , age as dropdown , gender as radio button and agree toterms as checkbox.
+        Also added a paragraph tag for showing validation message.
+
+Step2 : Copied the jquery link from site and added it into script tag.
+
+Step3 : created a js file and added it into a script tag below the code of script query tag.
+
+Step4 : Created a function that works when the form submit.
+
+Step5 : Created a variable isValid as true,
+        Created variables for the form fields and get the value using id of the fields
+
+Step6 : Checked every Field is empty or not using if condition,
+        If it is true then set a error message to the paragraph that are below the fields.
+        Else, changing the variable isValid as false and if this variable (is Valid) is false then the error message will show.
+
+Step7 : Otherwise, the form will submit.
+
+Step8 : Also created a css file and added the css link tag to head of the html tag.
+        Inside the css file added the font colour as red and set it's size.
+        Also set the font family of error message as Roboto.
