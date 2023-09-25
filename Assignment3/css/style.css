@@ -1,0 +1,13 @@
+#button1,#nextbutton {
+    margin: 60px;
+    height: 30px;
+    width: 100px;
+}
+#maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 200px;
+    overflow: hidden;
+}
