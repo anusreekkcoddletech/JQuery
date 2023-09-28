@@ -5,12 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment4</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-
-    </header>
+        <h1 class="title">All-in-One Emporium</h1>
+        <input type="text" class="productname" id="searchInput" placeholder="Search products">
+        <i id="searchicon" class="fa fa-search" style="font-size:24px"></i>
+        <i id="carticon" class="fa fa-shopping-cart"></i>
+    </header><br><br>
+    <div id="maindiv">
+        <div id="productcart">
+            <i id="closeicon" class="fa fa-close"></i>
+            <h2 class="cartheading">My Cart</h2>
+            <ul id="cartlist">
+            </ul>
+        </div>
+        <div class="product" id="product1">
+            <img src="images/monitor.jpg" alt="monitor">
+            <h3>ViewSonic HD Monitor</h3>
+            <h6>ViewSonic 24 Inch Full HD IPS<br> White Monitor</h6>
+            <p> &#8377;8,000</p>
+            <button id="cartbtn1">Add to cart</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="images/camera.jpg" alt="camera">
+            <h3>Mirrorless Digital SLR Camera</h3>
+            <h6>Sony Alpha ILCE-7M3K Full-Frame 24.2MP <br>Mirrorless Digital SLR Camera</h6>
+            <p> &#8377;1,43,990</p>
+            <button id="cartbtn2">Add to cart</button>
+        </div>
+        <div class="product" id="product3">
+            <img src="images/airdops.jpg" alt="airpods">
+            <h3>Wireless Ear Earbuds </h3>
+            <h6>Boult Audio Z40 True Wireless in<br> Ear Earbuds </h6>
+            <p> &#8377;1,499</p>
+            <button id="cartbtn3">Add to cart</button>
+        </div>
+        <div class="product" id="product4">
+            <img src="images/printer.jpg" alt="printer">
+            <h3>Epson EcoTank Printer</h3>
+            <h6>Epson EcoTank L130 Single Function<br> InkTank Printer</h6>
+            <p> &#8377;3,999</p>
+            <button id="cartbtn4">Add to cart</button>
+        </div>
+        <div class="product" id="product5">
+            <img src="images/projector.jpg" alt="projector">
+            <h3>Portable HD Projector</h3>
+            <h6>UN Free Style Projector for Home 4K support<br> 720P Native HD <br>Portable Projector</h6>
+            <p> &#8377;8,490</p>
+            <button id="cartbtn5">Add to cart</button>
+        </div>
+        <div class="product" id="product6">
+            <img src="images/guitar.jpg" alt="guitar">
+            <h3>Kadence Guitar</h3>
+            <h6>Kadence Guitar Acoustica Series, Electric <br>Acoustic Guitar, Ash Wood with Pickup and <br>Inbuilt
+                tuner.</h6>
+            <p> &#8377;6,999</p>
+            <button id="cartbtn6">Add to cart</button>
+        </div>
+        <div class="product" id="product7">
+            <img src="images/keyboard.jpg" alt="keyboard">
+            <h3>Portable Keyboard</h3>
+            <h6>Casio CT-S300 Casiotone 61-Key <br>Touch Sensitive Portable Keyboard<br> with Piano tones,Black</h6>
+            <p> &#8377;5,220</p>
+            <button id="cartbtn7">Add to cart</button>
+        </div>
+        <div class="product" id="product8">
+            <img src="images/violin.jpg" alt="violin">
+            <h3>Maple Wood Violin</h3>
+            <h6>Salablez Indian Maple Wood<br>Handmade Violin<br>
+                Acoustic Violin</h6>
+            <p> &#8377;3,300</p>
+            <button id="cartbtn8">Add to cart</button>
+        </div>
+        <div id="noResultsMessage">Item not found</div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="js/script.js"></script>  
+    <script src="js/script.js"></script>
 </body>
 </html>
