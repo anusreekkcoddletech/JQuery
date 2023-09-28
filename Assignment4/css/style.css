@@ -1,7 +1,100 @@
-body{
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
-header{
-    background-color: #f5cdd6;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #4647470d;
+}
+header {
+    background-color: black;
+    height: 100px;
+    box-shadow: 1px 1px 1px red;
+    display: flex;
+}
+.title {
+    margin: 0;
+    color: white;
+    margin: 30px;
+    font-family: 'Croissant One', cursive;
+}
+#carticon {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.849);
+    margin: 30px 0;
+    position: relative;
+    left: 55%;
+    cursor: pointer;
+}
+#searchicon {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.774);
+    margin: 35px 0;
+    position: relative;
+    left: 36%;
+    cursor: pointer;
+}
+.productname {
+    margin: 35px 0;
+    position: relative;
+    left: 52%;
+}
+#maindiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    background-color: #848b8da6;
+    box-shadow: 3px 3px 5px #aaaaaa;
+    margin: 20px;
+    display: block;
+    text-align: center;
+    width: 300px;
+}
+.product img {
+    width: 100%;
+}
+#cartbtn1
+, #cartbtn2
+, #cartbtn3
+, #cartbtn4
+, #cartbtn5
+, #cartbtn6
+, #cartbtn7
+, #cartbtn8 {
+    width: 120px;
     height: 50px;
+    cursor: pointer;
+    margin: auto;
+    border: none;
+    box-shadow: 5px 5px 6px #aaaaaac2;
+}
+#closeicon {
+    font-size: 24px;
+}
+#noResultsMessage {
+    height: 140px;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+}
+#productcart {
+    background-color: rgba(23, 20, 20, 0.822);
+    box-shadow: 3px 3px 5px #aaaaaa;
+    position: fixed;
+    color: white;
+    top: 100px;
+    right: 5px;
+    width: 350px;
+    height: 85%;
+    overflow-y: auto;
+}
+.cartheading {
+    text-align: center;
+}
+#cartList {
+    display: block;
+    padding-left: 5%;
 }
