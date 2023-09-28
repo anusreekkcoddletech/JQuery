@@ -1,8 +1,13 @@
 $(document).ready(function () {
     var $products = $(".product")
     var $message = $("#noResultsMessage")
+    var $totalprice = $("#totalprice")
+    var totalcartprice = 0
+
     $message.hide()
-    $("#searchInput").on("keyup", function () {
+    $totalprice.text("Total Amount: ₹0")
+
+        $("#searchInput").on("keyup", function () {
         var value = $(this).val().toLowerCase()
         $products.each(function () {
             var productText = $(this).find("h3").text()
@@ -33,16 +38,20 @@ $(document).ready(function () {
             cart[productname] = { price: price, quantity: 1 }
         }
         displayCart()
+        
     }
     function displayCart() {
         var $cartList = $("#cartlist")
         $cartList.empty()
+        totalcartprice = 0
+
         for (var productname in cart) {
             var item = cart[productname]
             if (item) {
                 var $cartItem = $("<li>").css({ "list-style-type": "decimal" })
-                $cartItem.html("Product : " + productname + "<br>" + "Quantity : " + item.quantity + "<br>" + "Price : &#8377;" + item.price * item.quantity + "<br>"
-                )
+                $cartItem.html("Product : " + productname + "<br>" + "Quantity : " + item.quantity + "<br>" + "Price : &#8377;" + item.price * item.quantity + "<br>" )
+
+                totalcartprice += item.price * item.quantity
                 var $incrementButton = $("<button> Add one more item</button>").css({ "width": "150px", "height": "30px", })
                 var $decrementButton = $("<button>Remove one item</button>" + "<br>" + "<br>").css({ "width": "150px", "height": "30px", })
 
@@ -68,6 +77,8 @@ $(document).ready(function () {
                 $cartList.append($cartItem)
             }
         }
+        $totalprice.text("Total Price: Rs." + totalcartprice)
+        
     }
     $("#cartbtn1").click(function () {
         $("#productcart").show()
@@ -134,3 +145,5 @@ $(document).ready(function () {
         updateCart(productname, price)
     })
 })
+
+
