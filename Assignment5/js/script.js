@@ -56,9 +56,7 @@ $(document).ready(function () {
 
     $("#selectcategory").change(function selectCategory() {
         let selectedCategory = $(this).val().toLowerCase()
-    
-        console.log("Selected category:", selectedCategory)
-    
+        
         if (selectedCategory === "all") {
             filteredData = []
             displayProducts(data)
@@ -67,11 +65,9 @@ $(document).ready(function () {
                 let productCategory = item.category.toLowerCase()
                 return productCategory === selectedCategory
             })
-            console.log("Filtered data:", filteredData)
             displayProducts(filteredData)
         }
-    });
-    
+    })
     function addtoCart(product) {
         $("#productcart").show()
         const productName = product.title
@@ -86,7 +82,6 @@ $(document).ready(function () {
         }
         let discount = (product.discountPercentage / 100) * product.price
         cart[productName].offerPrice = product.price - discount
-
         updateCart()
     }
     $("#closeicon").click(function () {
@@ -110,7 +105,7 @@ $(document).ready(function () {
                 $message.show()
             }
         })
-    });
+    })
     function updateCart() {
         $("#cart").empty()
         let totalCartPrice = 0
