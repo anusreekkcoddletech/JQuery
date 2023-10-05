@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="title">All-in-One Emporium</h1>
+        <input type="text" class="productname" id="searchInput" placeholder="Search products">
+        <i id="searchicon" class="fa fa-search" style="font-size:24px"></i>
+        <i id="carticon" class="fa fa-shopping-cart"></i>
+
+        <select id="sortDropdown">
+            <option value="select">Sort products by</option>
+            <option value="priceLowToHigh">Price: Low to High</option>
+            <option value="priceHighToLow">Price: High to Low</option>
+            <option value="rating">Rating: High to Low</option>
+        </select>
+
+        <select id="selectcategory">
+            <option value="all">all</option>
+            <option value="smartphones">smartphones</option>
+            <option value="laptops">laptops</option>
+            <option value="fragrances">fragrances</option>
+            <option value="skincare">skincare</option>
+            <option value="groceries">groceries</option>
+            <option value="home-decoration">home-decoration</option>
+
+        </select>
+
+    </header><br><br>
+    <div>
+        <ul id="products"></ul>
+        <div id="productcart">
+            <i id="closeicon" class="fa fa-close"></i>
+            <h2 class="cartheading">My Cart</h2>
+            <ul id="cart">
+            </ul>
+            <p id="totalprice"></p>
+        </div>
+        <div id="noResultsMessage">Item not found</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
