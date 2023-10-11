@@ -50,12 +50,12 @@ header {
 #sortDropdown{
     margin: 35px 0;
     position: relative;
-    left: -34%;
+    right: 36%;
 }
 #selectcategory{
     margin: 35px 0;
     position: relative;
-    left: -52%;
+    right: 38%;
 }
 #products {
     display: flex;

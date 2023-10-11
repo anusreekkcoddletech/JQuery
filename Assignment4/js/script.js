@@ -145,5 +145,3 @@ $(document).ready(function () {
         updateCart(productname, price)
     })
 })
-
-
