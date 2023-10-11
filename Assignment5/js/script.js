@@ -61,24 +61,24 @@ $(document).ready(function () {
         filterProducts()
     })
     $("#sortDropdown").change(function () {
-        let selectedOption = $("#sortDropdown").val()
-        let itemsToSort = displayedProducts.slice()
-
-        if (selectedOption === "priceLowToHigh") {
-            itemsToSort.sort(function (a, b) {
-                return a.price - b.price
-            })
-        } else if (selectedOption === "priceHighToLow") {
-            itemsToSort.sort(function (a, b) {
-                return b.price - a.price
-            })
-        } else if (selectedOption === "rating") {
-            itemsToSort.sort(function (a, b) {
-                return b.rating - a.rating
-            })
-        }
-
-        displayProducts(itemsToSort)
+            let selectedOption = $("#sortDropdown").val()
+            let itemsToSort = displayedProducts.slice()
+    
+            if (selectedOption === "priceLowToHigh") {
+                itemsToSort.sort(function (a, b) {
+                    return a.price - b.price
+                })
+            } else if (selectedOption === "priceHighToLow") {
+                itemsToSort.sort(function (a, b) {
+                    return b.price - a.price
+                })
+            } else if (selectedOption === "rating") {
+                itemsToSort.sort(function (a, b) {
+                    return b.rating - a.rating
+                })
+            }
+    
+            displayProducts(itemsToSort)
     })
 
     function addtoCart(product) {
@@ -117,7 +117,8 @@ $(document).ready(function () {
             })
         }
         if (searchItem !== "") {
-            filteredData = filteredData.filter(function (product) {
+            filteredData = filteredData.filter(function (product)
+             {
                 const productTitle = product.title.toLowerCase();
                 const productDescription = product.description.toLowerCase();
                 return productTitle.includes(searchItem) || productDescription.includes(searchItem);
